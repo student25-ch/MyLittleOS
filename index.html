@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyLittleOS | Custom x86 Hobby OS</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    background:#050505;
+    color:#39ff14;
+    font-family:Consolas,monospace;
+    padding:40px;
+    line-height:1.7;
+}
+.container{max-width:950px;}
+.term-box{
+    border:1px solid #39ff14;
+    padding:20px;
+    margin:24px 0;
+}
+h1{font-size:42px;margin-bottom:8px;}
+.hint{color:#888;}
+a{color:#00ccff;text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul{padding-left:22px;}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>MyLittleOS</h1>
+    <p class="hint">A 32-bit x86 hobby operating system</p>
+
+    <div class="term-box">
+        <h3>Features</h3>
+        <ul>
+            <li>VGA text buffer output</li>
+            <li>PS/2 Keyboard scan code reader</li>
+            <li>PS/2 Mouse initialization</li>
+            <li>RTL8139 network driver placeholder</li>
+            <li>Freestanding bare-metal, no libc / C++ standard library</li>
+        </ul>
+    </div>
+
+    <div class="term-box">
+        <h3>Source Code</h3>
+        <p>All source code released under MIT License.</p>
+        <p>Compiled binaries (kernel.elf, *.o) are kept locally by developer, not uploaded.</p>
+    </div>
+
+    <div class="term-box">
+        <h3>Build Environment</h3>
+        <ul>
+            <li>Windows</li>
+            <li>i686-elf cross compiler</li>
+            <li>NASM assembler</li>
+            <li>QEMU (for testing)</li>
+        </ul>
+    </div>
+
+    <div class="term-box">
+        <h3>Build Guide</h3>
+        <p>1. Enter src folder</p>
+        <p>2. Run build.bat</p>
+        <p>3. Output: kernel.elf</p>
+    </div>
+
+    <div class="term-box">
+        <h3>Repository</h3>
+        <p><a href="https://github.com/student25-ch/MyLittleOS">GitHub Repository</a></p>
+    </div>
+</div>
+</body>
+</html>
